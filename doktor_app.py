@@ -23,7 +23,7 @@ leki_radio = {1: "Na sen", 2: "Na głowę", 3: "przeciw nikotynie", 4: "na uspok
 
 def main():
 
-    st.set_page_config(page_title="App Titanic")
+    st.set_page_config(page_title="Doktor zszyj tu i zszyj tam")
     overview = st.container()
     left, right = st.columns(2)
     prediction = st.container()
@@ -31,7 +31,7 @@ def main():
     st.image("https://i1.kwejk.pl/k/obrazki/2017/12/bad1a96d3e90c2f93be2e0c2e67f1878.jpg")
 
     with overview:
-        st.title("App Choroba")
+        st.title("Doktor zszyj tu i zszyj tam")
 
     with left:
         sex_radio = st.radio("Leki", list(leki_radio.keys()), format_func=lambda x: leki_radio[x])
